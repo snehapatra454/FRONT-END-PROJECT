@@ -1,0 +1,117 @@
+/* styles.css */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.contact, .login {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.homepage-images {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+.plant-image {
+  text-align: center;
+}
+
+.plant-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.plant-image h1 {
+  font-size: 1.5em;
+  margin-top: 10px;
+  color: #333;
+}
+
+.featured-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  margin: 15px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+  
+  .featured-product {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 150px; /* Adjust the height to keep a consistent size */
+    object-fit: cover; /* Ensure the image covers the space */
+  }
+  
+  .product-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination button:disabled {
+    background-color: #bbb;
+  }

@@ -1,0 +1,161 @@
+/* App.css */
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  .description-page {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header .title-section,
+  .header .subtitle-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted #000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .header .title-section img,
+  .header .subtitle-section img {
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left {
+    flex: 3;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .editable-section {
+    position: relative;
+    border: 1px dotted #000;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .editable-section img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .editable-section h1,
+  .editable-section h2,
+  .editable-section p {
+    margin: 10px 0;
+  }
+  
+  .editable-section input[type="text"],
+  .editable-section textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000;
+    font-size: 14px;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f5dd;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f5dd;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .contact-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .text-content {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .plant-care .care-item {
+    margin-bottom: 10px;
+  }
+  
+  .description .disclaimer {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+  
+  .image-container {
+    flex: 0 0 200px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .plant-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
