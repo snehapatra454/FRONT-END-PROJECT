@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Contact.css';
+
 
 const ContactPage = () => {
   return (
@@ -22,13 +22,13 @@ const ContactPage = () => {
           <div className="contact-form">
             <form>
               <div className="form-group">
-                <input type="text" id="name" name="name" placeholder="Name" required />
+                <input type="text" id="name" name="name" placeholder="Swagat Beaura" required />
               </div>
               <div className="form-group">
-                <input type="email" id="email" name="email" placeholder="Email" required />
+                <input type="email" id="email" name="email" placeholder="Swagatb123@gmail.com" required />
               </div>
               <div className="form-group">
-                <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                <textarea id="message" name="message" placeholder="I found your site well informed" required></textarea>
               </div>
               <button type="submit" className="submit-button">Submit</button>
             </form>

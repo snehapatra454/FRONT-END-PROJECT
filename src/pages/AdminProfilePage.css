@@ -1,0 +1,93 @@
+.admin-profile-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.profile-form {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  color: #228B22;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-group input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.edit-btn {
+  background-color: #228B22;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #1e7a1e;
+}
+
+.about-section {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.about-section h3 {
+  color: #228B22;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}

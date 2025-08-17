@@ -1,0 +1,207 @@
+.admin-guide-page {
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.guide-form-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #228B22;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.form-group input,
+.form-group textarea,
+.guide-section input,
+.guide-section textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.3s ease;
+  min-height: 50px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #228B22;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.back-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #5a6268;
+}
+
+.guide-content {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.guide-sections {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.guide-section {
+  margin-bottom: 2rem;
+}
+
+.guide-section:last-child {
+  margin-bottom: 0;
+}
+
+.guide-section h3 {
+  color: #228B22;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.guide-section p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.guide-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.edit-btn, .edit-save-btn, .save-btn {
+  background-color: #228B22;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover, .edit-save-btn:hover, .save-btn:hover {
+  background-color: #1e7a1e;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+}
+
+.guide-image {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.guide-image .placeholder-image {
+  width: 100%;
+  height: 200px;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #666;
+  font-weight: bold;
+}
+
+.product-guide-image {
+  text-align: center;
+}
+
+.product-guide-image img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block;
+  border: 2px solid #228B22;
+}
+
+.product-guide-image h4 {
+  color: #228B22;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.product-guide-image p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .guide-form-container {
+    margin: 0 1rem 2rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+  
+  .guide-content {
+    grid-template-columns: 1fr;
+  }
+}
