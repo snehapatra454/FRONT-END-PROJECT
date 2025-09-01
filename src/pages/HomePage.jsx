@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { products } from '../data/products.js';
 import { useRole } from '../context/RoleContext';
 import './HomePage.css';
@@ -9,6 +10,7 @@ const HomePage = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 8;
   const { role } = useRole();
+  const navigate = useNavigate();
 
   const indexOfLastProduct = currentPage * productsPerPage;
   const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
@@ -36,10 +38,10 @@ const HomePage = () => {
             <h1>B.planet</h1>
           </div>
           <ul className="nav-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/login">Login</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">Products</Link></li>
+            <li><Link to="/login">Login</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
       </nav>
@@ -68,9 +70,9 @@ const HomePage = () => {
                 <p className="product-description">{product.description}</p>
                 <button className="view-btn" onClick={() => {
                   if (role === 'admin') {
-                    window.location.href = `/admin/guide?product=${product.id}`;
+                    navigate(`/admin/guide?product=${product.id}`);
                   } else {
-                    window.location.href = `/description/${product.id}`;
+                    navigate(`/description/${product.id}`);
                   }
                 }}>View</button>
               </div>

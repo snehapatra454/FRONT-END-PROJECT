@@ -1,0 +1,143 @@
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ededde; /* Creme background color */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Added to position the contact button */
+    padding-bottom: 20px;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+  
+  .contact-button {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  
+  .login-main {
+    padding-top: 20px;
+  }
+  
+  .login-title {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5a3d5c; /* Dark purple border color */
+    padding: 0;
+    background-color: white;
+  }
+  
+  .login-image {
+    max-width: 300px;
+    max-height: 300px;
+    background-color: #e3dcd5; /* Muddish color for image side */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-image img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .separator {
+    border-left: 2px solid #5a3d5c; /* Dark purple border color for separator */
+    height: auto; /* Adjust height as needed */
+  }
+  
+  .login-form {
+    max-width: 300px;
+    width: 100%;
+    padding: 20px;
+    background-color: white; /* White background color for credentials side */
+  }
+  
+  .login-form h3 {
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .forgot-password {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #e3dcd5; /* Muddish color for button */
+    border: 1px solid #5a3d5c; /* Dark purple border color for button */
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .signup-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .signup-link p {
+    margin: 0;
+  }
+  
+  .signup-link a {
+    color: #666;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  

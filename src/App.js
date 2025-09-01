@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { RoleProvider } from './context/RoleContext';
 import { GuideProvider } from './context/GuideContext';
 import ProtectedRoute from './components/ProtectedRoute';
